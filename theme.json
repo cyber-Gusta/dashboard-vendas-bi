@@ -1,0 +1,13 @@
+{
+  "name": "Gustavo BI",
+  "dataColors": [
+    "#2563EB",
+    "#0D9488",
+    "#F59E0B",
+    "#7C3AED",
+    "#DC2626"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#172554",
+  "tableAccent": "#2563EB"
+}

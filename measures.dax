@@ -1,0 +1,10 @@
+// Crie cada medida separadamente na tabela Vendas.
+Receita Líquida = CALCULATE(SUM(Vendas[receita_centavos]), Vendas[status] = "Concluído") / 100
+
+Lucro Bruto = CALCULATE(SUM(Vendas[lucro_centavos]), Vendas[status] = "Concluído") / 100
+
+Margem Bruta = DIVIDE([Lucro Bruto], [Receita Líquida])
+
+Pedidos Concluídos = CALCULATE(DISTINCTCOUNT(Vendas[pedido_id]), Vendas[status] = "Concluído")
+
+Ticket Médio = DIVIDE([Receita Líquida], [Pedidos Concluídos])
